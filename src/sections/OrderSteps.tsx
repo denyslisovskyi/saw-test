@@ -1,39 +1,34 @@
 "use client";
 
+import Container from "@/components/Container";
+
 export default function OrderSteps() {
+  const steps = [
+    { title: "Заявка", text: "Залишаєте заявку на нашому сайті" },
+    { title: "Дзвінок", text: "Менеджер уточнює деталі замовлення" },
+    { title: "Відправка", text: "Новою Поштою протягом 1-3 днів" },
+    { title: "Отримання", text: "Оплачуєте при отриманні поштою" },
+  ];
+
   return (
-    <section className="order_steps_section px-4 py-10 text-center">
-      <h2 className="title text-xl font-bold mb-6">Як замовити?</h2>
+    <Container>
+      <section className="order_steps_section px-4 pb-12 pt-6 text-center">
+        <h2 className="title text-xl md:text-2xl font-bold mb-8">
+          Як замовити?
+        </h2>
 
-      <div className="order_steps_list1 flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
-        <div className="step_item bg-white shadow-md p-4 rounded w-[200px]">
-          <h4 className="font-semibold text-lg mb-1">Заявка</h4>
-          <p className="text-sm text-gray-700">
-            Залишаєте заявку на нашому сайті
-          </p>
+        <div className="order_steps_list1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {steps.map((step, idx) => (
+            <div
+              key={idx}
+              className="step_item bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+            >
+              <h4 className="text-lg font-semibold mb-2">{step.title}</h4>
+              <p className="text-sm text-gray-600">{step.text}</p>
+            </div>
+          ))}
         </div>
-
-        <div className="step_item bg-white shadow-md p-4 rounded w-[200px]">
-          <h4 className="font-semibold text-lg mb-1">Дзвінок</h4>
-          <p className="text-sm text-gray-700">
-            Менеджер уточнює деталі замовлення
-          </p>
-        </div>
-
-        <div className="step_item bg-white shadow-md p-4 rounded w-[200px]">
-          <h4 className="font-semibold text-lg mb-1">Відправка</h4>
-          <p className="text-sm text-gray-700">
-            Новою Поштою протягом 1-3 днів
-          </p>
-        </div>
-
-        <div className="step_item bg-white shadow-md p-4 rounded w-[200px]">
-          <h4 className="font-semibold text-lg mb-1">Отримання</h4>
-          <p className="text-sm text-gray-700">
-            Оплачуєте при отриманні поштою
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   );
 }

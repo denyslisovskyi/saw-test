@@ -1,127 +1,93 @@
 "use client";
 
 import { useState } from "react";
+import Container from "@/components/Container";
 
 export default function OrderForm() {
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-
-    // Симуляція надсилання форми (заміни на свою логіку або інтеграцію)
-    setTimeout(() => {
-      setLoading(false);
-      alert("Форма відправлена!");
-    }, 2000);
-  };
-
   return (
-    <section className="offer_section px-4 py-10 text-center">
-      <div className="title_block">
-        <h1 className="main_title text-2xl font-bold mb-2">
+    <Container>
+      <section className="order_form_section px-4 pt-8 pb-16 text-center">
+        <h2 className="title text-xl md:text-2xl font-bold mb-6">
           Пила акумуляторна ланцюгова
-        </h1>
-        <p className="subtitle">з 2 АКБ, 2 шинами та 2 ланцюгами в комплекті</p>
-      </div>
+        </h2>
+        <p className="subtitle text-base text-gray-700 mb-4">
+          з 2 АКБ, 2 шинами та 2 ланцюгами в комплекті
+        </p>
 
-      <div className="image_block relative mx-auto mt-6 w-full max-w-xs">
-        <img
-          src="/img/top-offer.webp"
-          alt="Електропила акумуляторна"
-          width={480}
-          height={495}
-          loading="lazy"
-        />
-        <div className="discount_block absolute right-2 top-2 bg-red-600 text-white p-2 rounded">
-          <div className="value text-2xl font-bold">-35%</div>
-          <div className="text text-sm">знижка</div>
-        </div>
-      </div>
-
-      <div className="benefits_list mt-4 flex flex-wrap justify-center gap-2 text-sm font-medium">
-        <div className="benefit_item bg-gray-100 p-2 rounded">
-          Зручність та якість
-        </div>
-        <div className="benefit_item bg-gray-100 p-2 rounded">
-          Швидка доставка
-        </div>
-        <div className="benefit_item bg-gray-100 p-2 rounded">
-          Оплата при отриманні
-        </div>
-      </div>
-
-      <div className="price_block mt-6 flex flex-col items-center gap-4">
-        <div className="price_item old text-gray-500 text-sm">
-          <div className="text">Звичайна ціна:</div>
-          <div className="value line-through">4584 грн</div>
-        </div>
-        <div className="price_item new text-lg font-bold text-blue-600">
-          <div className="text">Ціна зі знижкою:</div>
-          <div className="value">2980 грн</div>
-        </div>
-      </div>
-
-      <div className="timer mt-4 text-sm">
-        <p>Пропозиція діє:</p>
-        <div className="timer_container flex justify-center gap-4 mt-2">
-          <div className="timer_block text-center">
-            <div className="count hours font-bold text-lg">00</div>
-            <div className="text">годин</div>
-          </div>
-          <div className="timer_block text-center">
-            <div className="count minutes font-bold text-lg">00</div>
-            <div className="text">хвилин</div>
-          </div>
-          <div className="timer_block text-center">
-            <div className="count seconds font-bold text-lg">00</div>
-            <div className="text">секунд</div>
-          </div>
-        </div>
-      </div>
-
-      <form
-        id="order_form"
-        className="order_form mt-6 space-y-4 max-w-md mx-auto"
-        onSubmit={handleSubmit}
-      >
-        <input
-          className="field w-full border p-2 rounded"
-          type="text"
-          name="name"
-          placeholder="Ваше ім'я"
-          required
-        />
-        <input
-          className="field w-full border p-2 rounded"
-          type="tel"
-          name="phone"
-          placeholder="Ваш телефон"
-          required
-        />
-        <div
-          id="phone-error"
-          style={{ color: "red", fontSize: 14, display: "none", marginTop: 5 }}
-        ></div>
-
-        {loading && (
+        <div className="image_block mx-auto mb-6">
           <img
-            src="/img/loading.gif"
-            alt="Загрузка..."
-            className="img-loading mx-auto"
-            width={32}
-            height={32}
+            src="/img/top-offer.webp"
+            alt="Електропила акумуляторна"
+            width={480}
+            height={495}
+            loading="lazy"
+            className="mx-auto rounded-lg shadow"
           />
-        )}
+          <div className="discount_block mt-2 text-accent font-bold text-xl">
+            -35% знижка
+          </div>
+        </div>
 
-        <button
-          className="button bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-          type="submit"
-          disabled={loading}
+        <div className="price_block flex flex-col md:flex-row justify-center gap-8 mb-6">
+          <div className="price_item text-gray-500">
+            <div className="text-sm">Звичайна ціна:</div>
+            <div className="value line-through text-lg">4585 грн</div>
+          </div>
+          <div className="price_item">
+            <div className="text-sm text-green-600">Ціна зі знижкою:</div>
+            <div className="value text-2xl font-bold text-green-700">
+              2980 грн
+            </div>
+          </div>
+        </div>
+
+        <form
+          id="order_form"
+          action="thnks_saw30_HR2.php"
+          method="post"
+          className="order_form mx-auto max-w-md space-y-4"
+          onSubmit={() => setLoading(true)}
         >
-          Оформити замовлення
-        </button>
-      </form>
-    </section>
+          <input
+            className="field w-full border px-4 py-2 rounded-md shadow-sm"
+            type="text"
+            name="name"
+            placeholder="Ваше ім'я"
+            required
+          />
+          <input
+            className="field w-full border px-4 py-2 rounded-md shadow-sm"
+            type="tel"
+            name="phone"
+            placeholder="Ваш телефон"
+            required
+          />
+          <div
+            id="phone-error"
+            style={{ display: "none" }}
+            className="text-red-600 text-sm"
+          >
+            Некоректний номер телефону
+          </div>
+
+          {loading && (
+            <img
+              src="/img/loading.gif"
+              alt="Завантаження..."
+              className="mx-auto w-6 h-6 animate-spin"
+            />
+          )}
+
+          <button
+            className="button w-full bg-accent text-white py-3 px-6 rounded-md text-lg font-semibold hover:bg-red-700 transition"
+            type="submit"
+          >
+            Оформити замовлення
+          </button>
+        </form>
+      </section>
+    </Container>
   );
 }

@@ -26,6 +26,7 @@ export default function Description() {
           width={480}
           height={360}
           loading="lazy"
+          priority
         />
 
         <p className="text-base leading-relaxed mb-6">
@@ -42,6 +43,7 @@ export default function Description() {
           width={480}
           height={480}
           loading="lazy"
+          priority
         />
 
         <p className="text-base leading-relaxed mb-6">
@@ -66,6 +68,7 @@ export default function Description() {
           width={480}
           height={274}
           loading="lazy"
+          priority
         />
 
         <Image
@@ -75,6 +78,7 @@ export default function Description() {
           width={480}
           height={480}
           loading="lazy"
+          priority
         />
 
         <a

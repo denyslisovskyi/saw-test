@@ -20,6 +20,7 @@ export default function Features() {
               width={144}
               height={144}
               loading="lazy"
+              priority
             />
             <div className="text_block">
               <h4 className="text-lg font-semibold mb-2">ПОТУЖНІСТЬ</h4>
@@ -39,6 +40,7 @@ export default function Features() {
               width={144}
               height={144}
               loading="lazy"
+              priority
             />
             <div className="text_block">
               <h4 className="text-lg font-semibold mb-2">
@@ -59,6 +61,7 @@ export default function Features() {
               width={144}
               height={144}
               loading="lazy"
+              priority
             />
             <div className="text_block">
               <h4 className="text-lg font-semibold mb-2">ШВИДКА ЗАРЯДКА</h4>
@@ -78,6 +81,7 @@ export default function Features() {
               width={144}
               height={144}
               loading="lazy"
+              priority
             />
             <div className="text_block">
               <h4 className="text-lg font-semibold mb-2">
@@ -100,6 +104,7 @@ export default function Features() {
           width={480}
           height={480}
           loading="lazy"
+          priority
         />
 
         <a

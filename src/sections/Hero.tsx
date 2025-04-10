@@ -51,6 +51,7 @@ export default function Hero() {
           width={480}
           height={617}
           loading="lazy"
+          priority
         />
       </header>
     </Container>

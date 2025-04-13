@@ -1,5 +1,4 @@
 const nextConfig = {
-  // output: "export", // turn on static for the web-site
   images: {
     unoptimized: true,
   },
@@ -9,7 +8,17 @@ const nextConfig = {
     },
   },
   matcher: "/((?!_next|favicon.ico).*)",
+  async rewrites() {
+    return [
+      {
+        source: "/robots.txt",
+        destination:
+          process.env.VERCEL_ENV === "production"
+            ? "/robots-prod.txt"
+            : "/robots-dev.txt",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
-

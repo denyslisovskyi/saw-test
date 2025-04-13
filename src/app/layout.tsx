@@ -1,5 +1,4 @@
 import "./globals.css";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import TrackParams from "@/components/TrackParams";
@@ -16,6 +15,10 @@ export const metadata: Metadata = {
     images: [defaultMeta.ogImage],
   },
   viewport: "width=device-width, initial-scale=1",
+  robots:
+    process.env.VERCEL_ENV === "production"
+      ? "index,follow"
+      : "noindex,nofollow",
 };
 
 export default function RootLayout({
@@ -28,11 +31,9 @@ export default function RootLayout({
       <body className={`${inter.variable} min-h-screen flex flex-col`}>
         <TrackParams />
         <Analytics />
-        <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
-

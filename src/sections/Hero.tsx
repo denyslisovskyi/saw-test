@@ -23,6 +23,7 @@ export default function Hero() {
             width={480}
             height={495}
             priority
+            placeholder="blur"
             className="rounded-lg shadow"
           />
           <div className="discount_block absolute top-2 right-2 bg-accent text-white px-3 py-1 rounded-full text-sm">
@@ -50,8 +51,8 @@ export default function Hero() {
           alt="акумуляторна пила ланцюгова"
           width={480}
           height={617}
-          loading="lazy"
           priority
+          placeholder="blur"
         />
       </header>
     </Container>

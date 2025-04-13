@@ -47,7 +47,6 @@ export default function Reviews() {
                     height={250}
                     loading="lazy"
                     className="mx-auto mb-4 rounded shadow"
-                    priority
                   />
                   <Image
                     src={`/img/${review.img2}`}
@@ -56,7 +55,6 @@ export default function Reviews() {
                     height={310}
                     loading="lazy"
                     className="mx-auto rounded shadow"
-                    priority
                   />
                 </div>
               </div>

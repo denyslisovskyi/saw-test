@@ -29,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <body className={`${inter.variable} min-h-screen flex flex-col`}>
-        <TrackParams />
         <Analytics />
+        <TrackParams />
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>

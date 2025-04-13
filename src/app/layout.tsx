@@ -8,6 +8,8 @@ import { defaultMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vashvubir.ua"),
+  title: defaultMeta.title,
+  description: defaultMeta.description,
   twitter: {
     card: "summary_large_image",
     title: defaultMeta.title,

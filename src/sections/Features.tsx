@@ -27,7 +27,7 @@ export default function Features() {
               loading="lazy"
             />
             <div className="text_block">
-              <h4 className="text-lg font-semibold mb-2">ПОТУЖНІСТЬ</h4>
+              <h3 className="text-lg font-semibold mb-2">ПОТУЖНІСТЬ</h3>
               <p className="text-sm text-gray-700">
                 Завдяки невеликим габаритам та високій потужності пила має
                 невеликі розміри та маленьку вагу, що дозволяє легко
@@ -46,9 +46,9 @@ export default function Features() {
               loading="lazy"
             />
             <div className="text_block">
-              <h4 className="text-lg font-semibold mb-2">
+              <h3 className="text-lg font-semibold mb-2">
                 НАДІЙНІ АКУМУЛЯТОРИ У КОМПЛЕКТІ
-              </h4>
+              </h3>
               <p className="text-sm text-gray-700">
                 У комплекті 2 Li-ion батареї 36В, 4Ач (можна обрати 6Ah) із
                 тривалим терміном служби.
@@ -66,7 +66,7 @@ export default function Features() {
               loading="lazy"
             />
             <div className="text_block">
-              <h4 className="text-lg font-semibold mb-2">ШВИДКА ЗАРЯДКА</h4>
+              <h3 className="text-lg font-semibold mb-2">ШВИДКА ЗАРЯДКА</h3>
               <p className="text-sm text-gray-700">
                 Ви можете брати компактну пилку з собою куди завгодно, а завдяки
                 технології швидкого заряджання акумулятор зарядиться за 2
@@ -85,9 +85,9 @@ export default function Features() {
               loading="lazy"
             />
             <div className="text_block">
-              <h4 className="text-lg font-semibold mb-2">
+              <h3 className="text-lg font-semibold mb-2">
                 АВТОМАТИЧНА ПОДАЧА МАСЛА
-              </h4>
+              </h3>
               <p className="text-sm text-gray-700">
                 Пила оснащена вбудованим масляним баком, що забезпечує
                 автоматичне змащування ланцюга. Це зменшує тертя, підвищує

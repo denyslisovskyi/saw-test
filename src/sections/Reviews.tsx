@@ -48,7 +48,7 @@ export default function Reviews() {
               <div key={idx} className="review_item min-w-full p-4">
                 <div className="text_block">
                   <Image
-                    src={`/img/${review.img1}`}
+                    src={review.img1}
                     alt={`Фото ${review.alt}`}
                     width={380}
                     height={250}
@@ -56,7 +56,7 @@ export default function Reviews() {
                     className="mx-auto mb-4 rounded shadow"
                   />
                   <Image
-                    src={`/img/${review.img2}`}
+                    src={review.img2}
                     alt={review.alt}
                     width={380}
                     height={310}

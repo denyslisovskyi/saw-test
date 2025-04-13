@@ -23,7 +23,7 @@ export default function OrderSteps() {
               key={idx}
               className="step_item bg-white p-6 rounded-lg shadow hover:shadow-md transition"
             >
-              <h4 className="text-lg font-semibold mb-2">{step.title}</h4>
+              <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
               <p className="text-sm text-gray-600">{step.text}</p>
             </div>
           ))}

@@ -9,13 +9,13 @@ import OrderForm from "@/sections/OrderForm";
 
 export default function HomeContent() {
   return (
-    <main>
+    <>
       <Hero />
       <Description />
       <Features />
       <Reviews />
       <OrderSteps />
       <OrderForm />
-    </main>
+    </>
   );
 }

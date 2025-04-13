@@ -2,6 +2,11 @@
 
 import Image from "next/image";
 import Container from "@/components/Container";
+import ImageSh1 from "@/assets/images/sh1.webp";
+import ImageSh2 from "@/assets/images/sh2.webp";
+import ImageSh3 from "@/assets/images/sh3.webp";
+import ImageMaslo from "@/assets/images/maslo.webp";
+import ImageZbirka from "@/assets/images/zbirka.webp";
 
 export default function Features() {
   return (
@@ -15,7 +20,7 @@ export default function Features() {
           <div className="benefit_item bg-white p-4 rounded-lg shadow">
             <Image
               className="img mx-auto mb-4"
-              src="/img/sh1.webp"
+              src={ImageSh1}
               alt="Потужна акумуляторна пила"
               width={144}
               height={144}
@@ -34,7 +39,7 @@ export default function Features() {
           <div className="benefit_item bg-white p-4 rounded-lg shadow">
             <Image
               className="img mx-auto mb-4"
-              src="/img/sh2.webp"
+              src={ImageSh2}
               alt="2 надійні акумулятори для пили"
               width={144}
               height={144}
@@ -54,7 +59,7 @@ export default function Features() {
           <div className="benefit_item bg-white p-4 rounded-lg shadow">
             <Image
               className="img mx-auto mb-4"
-              src="/img/sh3.webp"
+              src={ImageSh3}
               alt="Швидке заряджання акумулятора"
               width={144}
               height={144}
@@ -73,7 +78,7 @@ export default function Features() {
           <div className="benefit_item bg-white p-4 rounded-lg shadow">
             <Image
               className="img mx-auto mb-4"
-              src="/img/maslo.jpg"
+              src={ImageMaslo}
               alt="Автоматична подача масла в пилу"
               width={144}
               height={144}
@@ -95,7 +100,7 @@ export default function Features() {
 
         <Image
           className="image mx-auto mb-8 rounded-lg shadow"
-          src="/img/zbirka.webp"
+          src={ImageZbirka}
           alt="Швидка та легка підготовка акумуляторної пили"
           width={480}
           height={480}

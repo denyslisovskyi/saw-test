@@ -2,6 +2,10 @@
 
 import Image from "next/image";
 import Container from "@/components/Container";
+import ImageA1 from "@/assets/images/a1.webp";
+import ImageUse from "@/assets/images/use.webp";
+import ImageA3 from "@/assets/images/a3.webp";
+import ImageDvugyn from "@/assets/images/dvugyn.webp";
 
 export default function Description() {
   return (
@@ -21,12 +25,11 @@ export default function Description() {
 
         <Image
           className="image mx-auto mb-6 rounded-lg shadow"
-          src="/img/a1.webp"
+          src={ImageA1}
           alt="Обрізка гілок"
           width={480}
           height={360}
           loading="lazy"
-          priority
         />
 
         <p className="text-base leading-relaxed mb-6">
@@ -38,12 +41,11 @@ export default function Description() {
 
         <Image
           className="image mx-auto mb-6 rounded-lg shadow"
-          src="/img/use.webp"
+          src={ImageUse}
           alt="Заготівля дров"
           width={480}
           height={480}
           loading="lazy"
-          priority
         />
 
         <p className="text-base leading-relaxed mb-6">
@@ -63,22 +65,20 @@ export default function Description() {
 
         <Image
           className="image mx-auto mb-6 rounded-lg shadow"
-          src="/img/a3.webp"
+          src={ImageA3}
           alt="Компактна пила"
           width={480}
           height={274}
           loading="lazy"
-          priority
         />
 
         <Image
           className="image mx-auto mb-8 rounded-lg shadow"
-          src="/img/dvugyn.webp"
+          src={ImageDvugyn}
           alt="Оновлена модель двигуна"
           width={480}
           height={480}
           loading="lazy"
-          priority
         />
 
         <a

@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { defaultMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vashvubir.ua"),
+  metadataBase: new URL("https://saw-test-denys-projects-9a46b281.vercel.app"),
   title: defaultMeta.title,
   description: defaultMeta.description,
   twitter: {

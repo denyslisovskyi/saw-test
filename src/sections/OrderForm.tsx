@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import Container from "@/components/Container";
+import Image from "next/image";
+import ImageTopOffer from "@/assets/images/top-offer.webp";
+import ImageLoading from "@/assets/images/loading.gif";
 
 export default function OrderForm() {
   const [loading, setLoading] = useState(false);
@@ -17,8 +20,8 @@ export default function OrderForm() {
         </p>
 
         <div className="image_block mx-auto mb-6">
-          <img
-            src="/img/top-offer.webp"
+          <Image
+            src={ImageTopOffer}
             alt="Електропила акумуляторна"
             width={480}
             height={495}
@@ -73,10 +76,11 @@ export default function OrderForm() {
           </div>
 
           {loading && (
-            <img
-              src="/img/loading.gif"
+            <Image
+              src={ImageLoading}
               alt="Завантаження..."
               className="mx-auto w-6 h-6 animate-spin"
+              loading="lazy"
             />
           )}
 

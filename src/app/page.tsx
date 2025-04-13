@@ -7,7 +7,8 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Product",
     name: "Акумуляторна пила ланцюгова",
-    image: "https://vashvubir.ua/img/top-offer.webp",
+    image:
+      "https://saw-test-denys-projects-9a46b281.vercel.app/img/top-offer.webp",
     description: "Потужна, компактна пила на 2 АКБ для дому та саду.",
   };
 

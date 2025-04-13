@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Container from "@/components/Container";
+import ImageTopOffer from "@/assets/images/top-offer.webp";
+import ImageMain from "@/assets/images/main-1-2-2.webp";
 
 export default function Hero() {
   return (
@@ -18,13 +20,14 @@ export default function Hero() {
 
         <div className="image_block relative inline-block mb-6">
           <Image
-            src="/img/top-offer.webp"
+            src={ImageTopOffer}
             alt="Акумуляторна пила ланцюгова – головна пропозиція"
             width={480}
             height={495}
             priority
             placeholder="blur"
             className="rounded-lg shadow"
+            blurDataURL={ImageTopOffer.blurDataURL}
           />
           <div className="discount_block absolute top-2 right-2 bg-accent text-white px-3 py-1 rounded-full text-sm">
             <span className="value font-bold">-35%</span>
@@ -47,12 +50,13 @@ export default function Hero() {
 
         <Image
           className="image mx-auto mt-8 rounded-lg shadow"
-          src="/img/main-1-2-2.webp"
+          src={ImageMain}
           alt="акумуляторна пила ланцюгова"
           width={480}
           height={617}
           priority
           placeholder="blur"
+          blurDataURL={ImageMain.blurDataURL}
         />
       </header>
     </Container>

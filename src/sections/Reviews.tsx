@@ -3,6 +3,13 @@
 import Image from "next/image";
 import Container from "@/components/Container";
 
+import ImageRev1 from "@/assets/images/rev1.webp";
+import ImageRev2 from "@/assets/images/rev2.webp";
+import ImageRev3 from "@/assets/images/rev3.webp";
+import ImageFeedback1 from "@/assets/images/1_vidguk.webp";
+import ImageFeedback2 from "@/assets/images/2_vidguk.webp";
+import ImageFeedback3 from "@/assets/images/3_vidguk.webp";
+
 export default function Reviews() {
   return (
     <Container>
@@ -23,18 +30,18 @@ export default function Reviews() {
           <div className="simple-slider flex transition-transform duration-300 ease-in-out">
             {[
               {
-                img1: "rev1.webp",
-                img2: "1_vidguk.webp",
+                img1: ImageRev1,
+                img2: ImageFeedback1,
                 alt: "Андрій Тарасенко",
               },
               {
-                img1: "rev2.webp",
-                img2: "2_vidguk.webp",
+                img1: ImageRev2,
+                img2: ImageFeedback2,
                 alt: "Володимир Тарченко",
               },
               {
-                img1: "rev3.webp",
-                img2: "3_vidguk.webp",
+                img1: ImageRev3,
+                img2: ImageFeedback3,
                 alt: "Відгук покупця",
               },
             ].map((review, idx) => (

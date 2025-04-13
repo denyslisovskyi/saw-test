@@ -14,15 +14,6 @@ export default function Analytics() {
           })(window,document,'script','dataLayer','GTM-P5DBN4S2');
         `}
       </Script>
-
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-P5DBN4S2"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        />
-      </noscript>
     </>
   );
 }

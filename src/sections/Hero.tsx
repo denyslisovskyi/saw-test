@@ -8,7 +8,10 @@ import ImageMain from "@/assets/images/main-1-2-2.webp";
 export default function Hero() {
   return (
     <Container>
-      <header className="offer_section px-4 pt-10 pb-8 text-center bg-white">
+      <header
+        className="offer_section px-4 pt-10 pb-8 text-center bg-white"
+        role="banner"
+      >
         <div className="title_block mb-6">
           <h1 className="main_title text-2xl md:text-3xl font-bold leading-tight">
             Акумуляторна пила ланцюгова
@@ -17,13 +20,11 @@ export default function Hero() {
             з оновленою моделлю безщіткового двигуна
           </p>
         </div>
-
         <div className="image_block relative inline-block mb-6">
           <Image
             src={ImageTopOffer}
             alt="Акумуляторна пила ланцюгова – головна пропозиція"
-            width={480}
-            height={495}
+            sizes="(max-width: 768px) 100vw, 600px"
             priority
             placeholder="blur"
             className="rounded-lg shadow"
@@ -35,11 +36,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="benefits_list grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 text-sm font-medium text-gray-700">
-          <div className="benefit_item">Зручність та якість</div>
-          <div className="benefit_item">Швидка доставка</div>
-          <div className="benefit_item">Оплата при отриманні</div>
-        </div>
+        <ul className="benefits_list grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 text-sm font-medium text-gray-700">
+          <li className="benefit_item">Зручність та якість</li>
+          <li className="benefit_item">Швидка доставка</li>
+          <li className="benefit_item">Оплата при отриманні</li>
+        </ul>
 
         <a
           href="#order_form"
@@ -47,15 +48,13 @@ export default function Hero() {
         >
           Замовити зі знижкою
         </a>
-
         <Image
           className="image mx-auto mt-8 rounded-lg shadow"
           src={ImageMain}
-          alt="акумуляторна пила ланцюгова"
-          width={480}
-          height={617}
-          priority
+          alt="Акумуляторна пила знизу"
+          sizes="(max-width: 768px) 100vw, 600px"
           placeholder="blur"
+          loading="lazy"
           blurDataURL={ImageMain.blurDataURL}
         />
       </header>

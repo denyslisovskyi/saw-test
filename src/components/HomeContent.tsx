@@ -1,11 +1,25 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
 import Hero from "@/sections/Hero";
 import Description from "@/sections/Description";
 import Features from "@/sections/Features";
-import Reviews from "@/sections/Reviews";
-import OrderSteps from "@/sections/OrderSteps";
-import OrderForm from "@/sections/OrderForm";
+
+const Reviews = dynamic(() => import("@/sections/Reviews"), {
+  ssr: false,
+  loading: () => <div>Завантаження відгуків...</div>,
+});
+
+const OrderSteps = dynamic(() => import("@/sections/OrderSteps"), {
+  ssr: false,
+  loading: () => <div>Завантаження кроків замовлення...</div>,
+});
+
+const OrderForm = dynamic(() => import("@/sections/OrderForm"), {
+  ssr: false,
+  loading: () => <div>Завантаження форми замовлення...</div>,
+});
 
 export default function HomeContent() {
   return (

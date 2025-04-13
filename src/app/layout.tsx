@@ -1,11 +1,10 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
-import Analytics from "@/components/Analytics";
 import TrackParams from "@/components/TrackParams";
 import { inter } from "@/lib/fonts";
 import type { Metadata } from "next";
 import { defaultMeta } from "@/lib/seo";
-import Head from "next/head";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://saw-test-denys-projects-9a46b281.vercel.app"),
@@ -31,9 +30,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="uk">
-      <Head>
-        <Analytics />
-      </Head>
+      <head>
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-P5DBN4S2');
+          `}
+        </Script>
+      </head>
       <body className={`${inter.variable} min-h-screen flex flex-col`}>
         <noscript>
           <iframe
@@ -41,7 +48,7 @@ export default function RootLayout({
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          />
+          ></iframe>
         </noscript>
         <TrackParams />
         <main className="flex-grow">{children}</main>

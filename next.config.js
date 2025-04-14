@@ -1,38 +1,13 @@
 const nextConfig = {
   images: {
-    formats: ["image/webp"],
-    dangerouslyAllowSVG: true,
+    unoptimized: true,
   },
   experimental: {
-    serverActions: true,
     turbo: {
       enabled: false,
     },
   },
-  async headers() {
-    return [
-      {
-        // Images cache
-        source: "/(.*)\\.(jpg|jpeg|png|gif|webp|svg)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        // Fonts cache
-        source: "/(.*)\\.(woff|woff2|ttf|otf)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-    ];
-  },
+  matcher: "/((?!_next|favicon.ico).*)",
   async rewrites() {
     return [
       {

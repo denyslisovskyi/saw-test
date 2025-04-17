@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Hero from "@/sections/Hero";
 import Description from "@/sections/Description";
 import Features from "@/sections/Features";
+import styles from "./HomeContent.module.css";
 
 const Reviews = dynamic(() => import("@/sections/Reviews"), {
   ssr: false,
@@ -23,13 +24,13 @@ const OrderForm = dynamic(() => import("@/sections/OrderForm"), {
 
 export default function HomeContent() {
   return (
-    <>
+    <div className={styles.contentWrapper}>
       <Hero />
       <Description />
       <Features />
       <Reviews />
       <OrderSteps />
       <OrderForm />
-    </>
+    </div>
   );
 }

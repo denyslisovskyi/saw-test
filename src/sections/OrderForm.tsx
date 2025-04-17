@@ -1,14 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import Container from "@/components/Container";
 import Image from "next/image";
 import ImageTopOffer from "@/assets/images/top-offer.webp";
-import ImageLoading from "@/assets/images/loading.gif";
+import OrderForm from "@/components/OrderForm";
 
-export default function OrderForm() {
-  const [loading, setLoading] = useState(false);
-
+export default function OrderFormSection() {
   return (
     <Container>
       <section className="order_form_section px-4 pt-8 pb-16 text-center">
@@ -45,52 +42,7 @@ export default function OrderForm() {
             </div>
           </div>
         </div>
-
-        <form
-          id="order_form"
-          action="thnks_saw30_HR2.php"
-          method="post"
-          className="order_form mx-auto max-w-md space-y-4"
-          onSubmit={() => setLoading(true)}
-        >
-          <input
-            className="field w-full border px-4 py-2 rounded-md shadow-sm"
-            type="text"
-            name="name"
-            placeholder="Ваше ім'я"
-            required
-          />
-          <input
-            className="field w-full border px-4 py-2 rounded-md shadow-sm"
-            type="tel"
-            name="phone"
-            placeholder="Ваш телефон"
-            required
-          />
-          <div
-            id="phone-error"
-            style={{ display: "none" }}
-            className="text-red-600 text-sm"
-          >
-            Некоректний номер телефону
-          </div>
-
-          {loading && (
-            <Image
-              src={ImageLoading}
-              alt="Завантаження..."
-              className="mx-auto w-6 h-6 animate-spin"
-              loading="lazy"
-            />
-          )}
-
-          <button
-            className="button w-full bg-accent text-white py-3 px-6 rounded-md text-lg font-semibold hover:bg-red-700 transition"
-            type="submit"
-          >
-            Оформити замовлення
-          </button>
-        </form>
+        <OrderForm />
       </section>
     </Container>
   );

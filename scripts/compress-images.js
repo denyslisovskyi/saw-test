@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import chalk from "chalk";
 
-const targetFolder = "public/img";
+const targetFolder = "src/assets/images";
 
 async function compressImages() {
   const files = await imagemin([`${targetFolder}/*.{jpg,jpeg,png}`], {

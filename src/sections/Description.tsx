@@ -9,10 +9,12 @@ import ImageUse from "@/assets/images/use.webp";
 import ImageA3 from "@/assets/images/a3.webp";
 import ImageDvugyn from "@/assets/images/dvugyn.webp";
 import ImageMain from "@/assets/images/main-1-2-2.webp";
+import { CountdownTimer } from "@/components/CountdownTimer";
 
 export default function Description() {
   return (
     <Container>
+      <CountdownTimer initialSeconds={39852} />
       <section>
         <a href="#order_form" className={styles.button}>
           Замовити зі знижкою

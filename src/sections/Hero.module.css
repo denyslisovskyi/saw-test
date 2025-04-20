@@ -16,13 +16,19 @@
 .subtitle {
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 14px;
+  margin: 0;
 }
 
 .imageBlock {
   position: relative;
+  margin-top: 12px;
 }
 
 .imageTop {
+  display: block;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
@@ -39,7 +45,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid #fff 3px;
+  align-items: center;
+  border: 3px solid #fff;
   border-radius: 50%;
   transform: rotate(-15deg);
 }
@@ -52,79 +59,5 @@
 
 .discountText {
   line-height: 20px;
-}
-
-.benefitsList {
-  padding: 12px 0;
-  background: #0074ae;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 20px 0;
-}
-
-.benefitItem {
-  width: 150px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: "AvenirNextCyr", sans-serif;
-}
-
-.benefitsBlock {
-  padding: 12px 0;
-  background: #0074ae;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  text-align: center;
-  font-family: "AvenirNextCyr", sans-serif !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
-  font-weight: 400 !important;
-}
-
-.benefitsBlock img {
-  margin-bottom: 10px;
-}
-
-.benefitsBlock .benefitItem {
-  flex-direction: column;
-}
-
-.priceBlock {
-  border: 1px solid #e6e6e6;
-}
-
-.priceItem {
-  float: left;
-  padding: 20px 0 0;
-  width: 50%;
-  height: 90px;
-  border-right: 1px solid #e6e6e6;
-  text-align: center;
-}
-
-.text {
-  margin: 0 0 5px;
-  font-size: 16px;
-  line-height: 14px;
-}
-
-.priceItem:nth-child(2) .value {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.priceItem:nth-child(1) .value {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
-  color: #898989;
-  text-decoration: line-through;
+  font-size: 12px;
 }

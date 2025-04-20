@@ -109,7 +109,7 @@ export default function ReviewsSlider({ reviews }: ReviewsSliderProps) {
               src={review.img2}
               alt={review.alt}
               width={380}
-              height={310}
+              height={315}
               loading="lazy"
               draggable={false}
               className={styles.image}

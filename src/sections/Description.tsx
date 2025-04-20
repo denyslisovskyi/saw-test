@@ -23,8 +23,10 @@ export default function Description() {
           src={ImageMain}
           alt="Акумуляторна пила знизу"
           sizes="(max-width: 768px) 100vw, 600px"
-          placeholder="blur"
+          width={500}
+          height={750}
           loading="lazy"
+          placeholder="blur"
           blurDataURL={ImageMain.blurDataURL}
         />
       </section>

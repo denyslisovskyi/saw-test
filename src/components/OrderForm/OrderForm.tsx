@@ -183,6 +183,8 @@ export default function OrderForm() {
           alt="іконка людини"
           className={styles.icon}
           loading="lazy"
+          width={24}
+          height={24}
         />
         <input
           type="text"
@@ -203,6 +205,8 @@ export default function OrderForm() {
           alt="іконка телефона"
           className={styles.icon}
           loading="lazy"
+          width={24}
+          height={24}
         />
         <input
           type="tel"

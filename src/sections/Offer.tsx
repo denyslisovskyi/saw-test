@@ -73,8 +73,8 @@ export default function Offer() {
           <Image
             src={ImageTwoP}
             alt="Гарантія на пилку 12 місяців"
-            width={274}
-            height={274}
+            width={150}
+            height={150}
             placeholder="blur"
             blurDataURL={ImageTwoP.blurDataURL}
             loading="lazy"
@@ -112,7 +112,7 @@ export default function Offer() {
           src={ImageNP}
           alt="Розстрочка від Нової Пошти"
           width={478}
-          height={129}
+          height={118}
           placeholder="blur"
           blurDataURL={ImageNP.blurDataURL}
           loading="lazy"

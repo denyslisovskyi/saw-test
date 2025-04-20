@@ -22,8 +22,8 @@ export default function Features() {
               className={styles.img}
               src={ImageSh1}
               alt="Потужна акумуляторна пила"
-              width={144}
-              height={144}
+              width={150}
+              height={150}
               loading="lazy"
             />
             <div className={styles.textBlock}>
@@ -41,8 +41,8 @@ export default function Features() {
               className={styles.img}
               src={ImageSh2}
               alt="2 надійні акумулятори для пили"
-              width={144}
-              height={144}
+              width={150}
+              height={150}
               loading="lazy"
             />
             <div className={styles.textBlock}>
@@ -61,8 +61,8 @@ export default function Features() {
               className={styles.img}
               src={ImageSh3}
               alt="Швидке заряджання акумулятора"
-              width={144}
-              height={144}
+              width={150}
+              height={150}
               loading="lazy"
             />
             <div className={styles.textBlock}>
@@ -80,8 +80,8 @@ export default function Features() {
               className={styles.img}
               src={ImageMaslo}
               alt="Автоматична подача масла в пилу"
-              width={144}
-              height={144}
+              width={150}
+              height={150}
               loading="lazy"
             />
             <div className={styles.textBlock}>

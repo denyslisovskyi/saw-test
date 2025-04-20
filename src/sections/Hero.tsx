@@ -20,7 +20,7 @@ export default function Hero() {
           src={ImageTopOffer}
           alt="Акумуляторна пила ланцюгова – головна пропозиція"
           width={500}
-          height={520}
+          height={516}
           sizes="(max-width: 768px) 100vw, 600px"
           priority
           placeholder="blur"

@@ -93,8 +93,8 @@ export default function Hero() {
           <Image
             src={ImageTwoP}
             alt="Гарантія на пилку 12 місяців"
-            width="150"
-            height="150"
+            width={274}
+            height={274}
             priority
             placeholder="blur"
           />

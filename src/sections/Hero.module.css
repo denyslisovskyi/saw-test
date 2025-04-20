@@ -88,6 +88,14 @@
   font-weight: 400 !important;
 }
 
+.benefitsBlock img {
+  margin-bottom: 10px;
+}
+
+.benefitsBlock .benefitItem {
+  flex-direction: column;
+}
+
 .priceBlock {
   border: 1px solid #e6e6e6;
 }

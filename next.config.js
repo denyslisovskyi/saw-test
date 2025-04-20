@@ -12,10 +12,7 @@ const nextConfig = {
     return [
       {
         source: "/robots.txt",
-        destination:
-          process.env.VERCEL_ENV === "production"
-            ? "/robots-prod.txt"
-            : "/robots-dev.txt",
+        destination: "/robots-prod.txt",
       },
     ];
   },

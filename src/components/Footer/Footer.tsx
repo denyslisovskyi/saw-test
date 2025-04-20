@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
@@ -15,28 +16,51 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className="mt-2 flex flex-wrap justify-center gap-x-3 text-gray-700">
-        <Link href="/about-us" target="_blank" rel="noopener noreferrer">
+      <div className={styles.footerLinksRow}>
+        <Link
+          href="/about-us"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.footerLink}
+        >
           Про нас
         </Link>
-        <span>|</span>
-        <Link href="/delivery" target="_blank" rel="noopener noreferrer">
+        <span className={styles.footerSeparator}>|</span>
+        <Link
+          href="/delivery"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.footerLink}
+        >
           Доставка та оплата
         </Link>
-        <span>|</span>
-        <Link href="/contacts" target="_blank" rel="noopener noreferrer">
+        <span className={styles.footerSeparator}>|</span>
+        <Link
+          href="/contacts"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.footerLink}
+        >
           Контакти
         </Link>
       </div>
 
-      <div className="mt-1">
-        <Link href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+      <div className={styles.footerBottom}>
+        <Link
+          href="/privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.footerLink}
+        >
           Політика конфіденційності
         </Link>
-      </div>
 
-      <div>
-        <Link href="/returns" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="/returns"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.footerLink}
+        >
           Повернення і обмін
         </Link>
       </div>

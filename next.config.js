@@ -8,14 +8,6 @@ const nextConfig = {
     },
   },
   matcher: "/((?!_next|favicon.ico).*)",
-  async rewrites() {
-    return [
-      {
-        source: "/robots.txt",
-        destination: "/robots-prod.txt",
-      },
-    ];
-  },
 };
 
 export default nextConfig;

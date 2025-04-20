@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saw-test-denys-projects-9a46b281.vercel.app/sitemap.xml

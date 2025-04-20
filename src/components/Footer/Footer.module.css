@@ -1,0 +1,30 @@
+.footerLink {
+  padding: 4px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #4b5563;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.footerLinksRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footerSeparator {
+  padding: 0 5px;
+  color: #999;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}

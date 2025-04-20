@@ -22,9 +22,6 @@ export default function Offer() {
             alt="Зручність та якість"
             width={34}
             height={34}
-            placeholder="blur"
-            blurDataURL={ImageBenefitFirst.blurDataURL}
-            loading="lazy"
           />
           <span>Зручність та якість</span>
         </li>
@@ -34,9 +31,6 @@ export default function Offer() {
             alt="Швидка доставка"
             width={34}
             height={34}
-            placeholder="blur"
-            blurDataURL={ImageBenefitSecond.blurDataURL}
-            loading="lazy"
           />
           <span>Швидка доставка</span>
         </li>
@@ -46,9 +40,6 @@ export default function Offer() {
             alt="Оплата при отриманні"
             width={34}
             height={34}
-            placeholder="blur"
-            blurDataURL={ImageBenefitThird.blurDataURL}
-            loading="lazy"
           />
           <span>Оплата при отриманні</span>
         </li>
@@ -56,15 +47,7 @@ export default function Offer() {
 
       <div className={styles.benefitsBlock}>
         <div className={styles.benefitItem}>
-          <Image
-            src={ImageOneP}
-            alt="Пила в роботі"
-            width={150}
-            height={150}
-            placeholder="blur"
-            blurDataURL={ImageOneP.blurDataURL}
-            loading="lazy"
-          />
+          <Image src={ImageOneP} alt="Пила в роботі" width={150} height={150} />
           <span>
             <b>Для будь-яких робіт</b> вдома, в саду чи на дачі!
           </span>
@@ -75,9 +58,6 @@ export default function Offer() {
             alt="Гарантія на пилку 12 місяців"
             width={150}
             height={150}
-            placeholder="blur"
-            blurDataURL={ImageTwoP.blurDataURL}
-            loading="lazy"
           />
           <span>
             <b>Гарантія 12 місяців</b> від виробника!
@@ -89,9 +69,6 @@ export default function Offer() {
             alt="Компактна та потужна пила"
             width={150}
             height={150}
-            placeholder="blur"
-            blurDataURL={ImageThreeP.blurDataURL}
-            loading="lazy"
           />
           <span>
             Безпечна, портативна та <b>потужна</b>

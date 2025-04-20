@@ -23,9 +23,7 @@ export default function Hero() {
           height={516}
           sizes="(max-width: 768px) 100vw, 600px"
           priority
-          placeholder="blur"
           className={styles.imageTop}
-          blurDataURL={ImageTopOffer.blurDataURL}
         />
         <div className={styles.discount}>
           <span className={styles.discountValue}>-35%</span>

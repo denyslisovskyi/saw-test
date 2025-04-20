@@ -18,7 +18,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <HomeContent />;
+      <HomeContent />
     </>
   );
 }

@@ -1,0 +1,68 @@
+.statText {
+  color: #fff;
+}
+
+.reviewsStatsBlock {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.line {
+  margin: 5px auto 0;
+  width: 330px;
+  height: 10px;
+  border-radius: 5px;
+  background: #e6e6e6;
+  overflow: hidden;
+}
+.line::before {
+  display: block;
+  content: "";
+  width: 98%;
+  height: 10px;
+  border-radius: 0 5px 5px 0;
+  background: #3eb23e;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.sliderInner {
+  display: flex;
+  user-select: none;
+  cursor: grab;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot,
+.dotActive {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dotActive {
+  background-color: #fff;
+}

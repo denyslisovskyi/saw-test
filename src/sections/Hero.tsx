@@ -3,12 +3,15 @@
 import Image from "next/image";
 import Container from "@/components/Container";
 import ImageTopOffer from "@/assets/images/top-offer.webp";
-import ImageMain from "@/assets/images/main-1-2-2.webp";
 import styles from "./Hero.module.css";
 import ImageOneP from "@/assets/images/1_p.webp";
 import ImageTwoP from "@/assets/images/2_p.webp";
 import ImageThreeP from "@/assets/images/3_p.webp";
 import ImageNP from "@/assets/images/np.webp";
+import ImageBenefitFirst from "@/assets/images/offer3__benefit1_icon.webp";
+import ImageBenefitSecond from "@/assets/images/offer3__benefit2_icon.webp";
+import ImageBenefitThird from "@/assets/images/offer3__benefit3_icon.webp";
+import { CountdownTimer } from "@/components/CountdownTimer";
 
 export default function Hero() {
   return (
@@ -37,9 +40,39 @@ export default function Hero() {
       </div>
 
       <ul className={styles.benefitsList}>
-        <li className={styles.benefitItem}>Зручність та якість</li>
-        <li className={styles.benefitItem}>Швидка доставка</li>
-        <li className={styles.benefitItem}>Оплата при отриманні</li>
+        <li className={styles.benefitItem}>
+          <Image
+            src={ImageBenefitFirst}
+            alt="Пила в роботі – зручно та ефективно"
+            width="34"
+            height="34"
+            priority
+            placeholder="blur"
+          />
+          <span>Зручність та якість</span>
+        </li>
+        <li className={styles.benefitItem}>
+          <Image
+            src={ImageBenefitSecond}
+            alt="Пила в роботі – зручно та ефективно"
+            width="34"
+            height="34"
+            priority
+            placeholder="blur"
+          />
+          <span>Швидка доставка</span>
+        </li>
+        <li className={styles.benefitItem}>
+          <Image
+            src={ImageBenefitThird}
+            alt="Пила в роботі – зручно та ефективно"
+            width="34"
+            height="34"
+            priority
+            placeholder="blur"
+          />
+          <span>Оплата при отриманні</span>
+        </li>
       </ul>
 
       <div className={styles.benefitsBlock}>
@@ -99,19 +132,7 @@ export default function Hero() {
           height="129"
         />
       </div>
-      <a href="#order_form" className={styles.button}>
-        Замовити зі знижкою
-      </a>
-
-      <Image
-        className={styles.imageBottom}
-        src={ImageMain}
-        alt="Акумуляторна пила знизу"
-        sizes="(max-width: 768px) 100vw, 600px"
-        placeholder="blur"
-        loading="lazy"
-        blurDataURL={ImageMain.blurDataURL}
-      />
+      <CountdownTimer initialSeconds={39852} />
     </Container>
   );
 }

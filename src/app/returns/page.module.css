@@ -1,0 +1,37 @@
+.wrapper {
+  background-color: #aca8a8;
+}
+
+.wrapper p,
+.wrapper li {
+  padding: 10px 30px;
+  text-align: justify;
+}
+
+.contentWrapper {
+  background-color: #f6f6f6;
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.pageTitle {
+  background-color: #407c91;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.sectionTitle {
+  background-color: #407c91;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 14px;
+  margin-top: 36px;
+  margin-bottom: 20px;
+}

@@ -1,7 +1,6 @@
 import "./globals.css";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 import TrackParams from "@/components/TrackParams";
-import { inter } from "@/lib/fonts";
 import type { Metadata } from "next";
 import { defaultMeta } from "@/lib/seo";
 import Script from "next/script";
@@ -41,7 +40,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${inter.variable} min-h-screen flex flex-col`}>
+      <body>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-P5DBN4S2"

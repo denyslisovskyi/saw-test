@@ -1,0 +1,76 @@
+.mainWrapper {
+  background: #aca8a8;
+}
+
+.contentWrapper {
+  background: #f6f6f6;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.blueTheme {
+  background-color: #2e7c91;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #fff;
+  color: #222;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container h3 {
+  font-size: 18px;
+  margin: 24px 0 12px;
+  font-weight: 600;
+}
+
+.container p {
+  margin-bottom: 1em;
+}
+
+.container ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 1em;
+}
+
+.container li {
+  margin-bottom: 0.5em;
+}
+
+.container a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+}
+
+.container table th,
+.container table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.container table th {
+  background-color: #f0f0f0;
+}

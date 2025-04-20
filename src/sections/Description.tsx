@@ -2,21 +2,39 @@
 
 import Image from "next/image";
 import Container from "@/components/Container";
+import styles from "./Description.module.css"; // 👈 підключаємо CSS-модуль
+
 import ImageA1 from "@/assets/images/a1.webp";
 import ImageUse from "@/assets/images/use.webp";
 import ImageA3 from "@/assets/images/a3.webp";
 import ImageDvugyn from "@/assets/images/dvugyn.webp";
+import ImageMain from "@/assets/images/main-1-2-2.webp";
 
 export default function Description() {
   return (
     <Container>
-      <section className="description_section px-4 pb-10 pt-6 text-center">
-        <h2 className="title text-xl md:text-2xl font-bold mb-6">
-          <span className="block">ПОТУЖНІСТЬ ТА УНІВЕРСАЛЬНІСТЬ</span>
+      <section>
+        <a href="#order_form" className={styles.button}>
+          Замовити зі знижкою
+        </a>
+
+        <Image
+          className={styles.imageBottom}
+          src={ImageMain}
+          alt="Акумуляторна пила знизу"
+          sizes="(max-width: 768px) 100vw, 600px"
+          placeholder="blur"
+          loading="lazy"
+          blurDataURL={ImageMain.blurDataURL}
+        />
+      </section>
+      <section className={styles.descriptionSection}>
+        <h2 className={styles.title}>
+          <span className={styles.block}>ПОТУЖНІСТЬ ТА УНІВЕРСАЛЬНІСТЬ</span>
           ДЛЯ БУДЬ-ЯКИХ РОБІТ ВДОМА, В САДУ ТА НА ДАЧІ!
         </h2>
 
-        <p className="text-base leading-relaxed mb-6">
+        <p className={styles.text}>
           <b>Надійна акумуляторна пила</b>, яка поєднує в собі портативність і
           потужність! Вона легко справляється як з обрізкою гілок у саду, так і{" "}
           <b>з розпилюванням великих колод</b>, що робить її незамінною для
@@ -24,7 +42,7 @@ export default function Description() {
         </p>
 
         <Image
-          className="image mx-auto mb-6 rounded-lg shadow"
+          className={styles.image}
           src={ImageA1}
           alt="Обрізка гілок"
           width={480}
@@ -32,7 +50,7 @@ export default function Description() {
           loading="lazy"
         />
 
-        <p className="text-base leading-relaxed mb-6">
+        <p className={styles.text}>
           Акумуляторна пила 36V з 2 АКБ та 2 шинами – <b> ідеальне рішення </b>{" "}
           для садових, будівельних і столярних робіт.{" "}
           <b>Зручна у використанні</b> як правою, так і лівою рукою,
@@ -40,7 +58,7 @@ export default function Description() {
         </p>
 
         <Image
-          className="image mx-auto mb-6 rounded-lg shadow"
+          className={styles.image}
           src={ImageUse}
           alt="Заготівля дров"
           width={480}
@@ -48,23 +66,23 @@ export default function Description() {
           loading="lazy"
         />
 
-        <p className="text-base leading-relaxed mb-6">
+        <p className={styles.text}>
           Ця <b>високопродуктивна пила</b> поєднує компактність, витривалість і
           мобільність. Ергономічний дизайн{" "}
           <b>дозволяє працювати довго без втоми</b>, незалежно від місця
           використання.
         </p>
 
-        <p className="text-base leading-relaxed mb-6">
+        <p className={styles.text}>
           <b>Технологія точного різу</b> зменшує навантаження на мотор,
           забезпечуючи довговічність. Відмінно підходить для обрізки дерев,
-          чагарників та
+          чагарників та{" "}
           <b>навіть для складних завдань, які зазвичай виконують бензопилами</b>
           .
         </p>
 
         <Image
-          className="image mx-auto mb-6 rounded-lg shadow"
+          className={styles.image}
           src={ImageA3}
           alt="Компактна пила"
           width={480}
@@ -73,7 +91,7 @@ export default function Description() {
         />
 
         <Image
-          className="image mx-auto mb-8 rounded-lg shadow"
+          className={styles.image}
           src={ImageDvugyn}
           alt="Оновлена модель двигуна"
           width={480}
@@ -81,10 +99,7 @@ export default function Description() {
           loading="lazy"
         />
 
-        <a
-          href="#order_form"
-          className="button inline-block bg-accent text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-red-700 transition"
-        >
+        <a href="#order_form" className={styles.button}>
           Замовити зі знижкою
         </a>
       </section>

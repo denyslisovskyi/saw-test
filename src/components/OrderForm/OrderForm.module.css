@@ -1,0 +1,90 @@
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 400px;
+  margin: 0 auto 20px;
+}
+
+.inputWrapper.invalid .input {
+  border-color: red;
+}
+
+.icon {
+  position: absolute;
+  top: 34px;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 66px;
+  padding: 0 20px 0 60px; /* відступ під іконку */
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #e6e6e6;
+}
+
+.input:last-child {
+  margin-bottom: 0;
+}
+
+.validationMessage {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-left: 60px; /* вирівнювання під іконку */
+  font-family: "AvenirNextCyr", sans-serif;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 50px;
+  border: none;
+  border-radius: 14px;
+  background: #ee3737;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #c73f3f;
+}
+
+.button:disabled {
+  background-color: #dedede;
+  color: #999;
+  cursor: not-allowed;
+}

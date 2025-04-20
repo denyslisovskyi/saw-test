@@ -1,0 +1,41 @@
+.mainWrapper {
+  background: #aca8a8;
+}
+
+.contentWrapper {
+  width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 80vh;
+}
+
+.blueTheme {
+  background-color: #457e97;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #222;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: underline;
+}

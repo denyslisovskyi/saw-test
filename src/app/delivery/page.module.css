@@ -1,0 +1,54 @@
+.mainWrapper {
+  background: #aca8a8;
+}
+
+.contentWrapper {
+  background: #f6f6f6;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  color: #333;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.blueTheme {
+  background-color: #0074ae;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+ul.list {
+  margin: 15px 0;
+  padding-left: 1.25rem;
+}
+
+ul.list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 1rem;
+}
+
+ul.list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0074ae;
+  font-size: 18px;
+  line-height: 1;
+}

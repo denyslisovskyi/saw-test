@@ -1,0 +1,55 @@
+.orderStepsSection {
+  padding: 30px 20px 30px;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.orderStepsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  justify-items: stretch;
+}
+
+.stepItem {
+  width: 215px;
+  background-color: hsl(240, 13%, 99%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.stepItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.titleWrapper img {
+  width: 32px;
+  height: 32px;
+}
+
+.stepTitle {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stepText {
+  text-align: start;
+  font-size: 18px;
+}

@@ -30,6 +30,7 @@ export default function HomeContent() {
       <Features />
       <Reviews />
       <OrderSteps />
+      <Hero />
       <OrderForm />
     </div>
   );

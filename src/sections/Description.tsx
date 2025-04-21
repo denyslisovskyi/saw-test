@@ -10,10 +10,21 @@ import ImageA3 from "@/assets/images/a3.webp";
 import ImageDvugyn from "@/assets/images/dvugyn.webp";
 import ImageMain from "@/assets/images/main-1-2-2.webp";
 import { CountdownTimer } from "@/components/CountdownTimer";
+import ImageNP from "@/assets/images/np.webp";
 
 export default function Description() {
   return (
     <Container>
+      <div className={styles.imageWrapper}>
+        <Image
+          src={ImageNP}
+          alt="Розстрочка від Нової Пошти"
+          fill
+          style={{ objectFit: "contain" }}
+          placeholder="blur"
+          blurDataURL={ImageNP.blurDataURL}
+        />
+      </div>
       <CountdownTimer initialSeconds={39852} />
       <section>
         <a href="#order_form" className={styles.button}>

@@ -66,3 +66,16 @@
   text-align: center;
   cursor: pointer;
 }
+
+.imageWrapper {
+  width: 478;
+  height: 118;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .imageWrapper {
+    width: 375px;
+    height: 90px;
+  }
+}

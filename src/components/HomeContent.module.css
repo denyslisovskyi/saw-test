@@ -3,3 +3,9 @@
   min-width: 375px;
   max-width: 500px;
 }
+
+@media (max-width: 499px) {
+  .orderStepsList {
+    max-width: 375px;
+  }
+}

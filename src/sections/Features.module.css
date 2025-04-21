@@ -67,6 +67,14 @@
   background: #e6e6e6;
 }
 
+.benefitItem:nth-child(odd) img {
+  margin-right: 1rem;
+}
+
+.benefitItem:nth-child(even) img {
+  margin-left: 1rem;
+}
+
 .itemHeading {
   width: 100%;
   font-weight: 700;
@@ -74,4 +82,11 @@
 
 .itemText {
   margin: 5px 0 0;
+}
+
+@media (max-width: 440px) {
+  .itemText {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

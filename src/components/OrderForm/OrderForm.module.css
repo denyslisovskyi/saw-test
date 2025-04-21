@@ -9,7 +9,7 @@
 
 .inputWrapper {
   position: relative;
-  width: 400px;
+  width: 90%;
   margin: 0 auto 20px;
 }
 
@@ -63,7 +63,7 @@
 .button {
   display: block;
   margin: 0 auto;
-  width: 350px;
+  width: 80%;
   height: 50px;
   border: none;
   border-radius: 14px;

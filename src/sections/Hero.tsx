@@ -7,7 +7,6 @@ import ImageTopOffer from "@/assets/images/top-offer.webp";
 import ImageOneP from "@/assets/images/1_p.webp";
 import ImageTwoP from "@/assets/images/2_p.webp";
 import ImageThreeP from "@/assets/images/3_p.webp";
-import ImageNP from "@/assets/images/np.webp";
 import ImageBenefitFirst from "@/assets/images/offer3__benefit1_icon.webp";
 import ImageBenefitSecond from "@/assets/images/offer3__benefit2_icon.webp";
 import ImageBenefitThird from "@/assets/images/offer3__benefit3_icon.webp";
@@ -107,16 +106,6 @@ export default function Hero() {
         <div className={styles.priceItem}>
           <div className={styles.text}>Ціна зі знижкою:</div>
           <div className={styles.value}>2980 грн</div>
-        </div>
-        <div style={{ width: 478, height: 118, position: "relative" }}>
-          <Image
-            src={ImageNP}
-            alt="Розстрочка від Нової Пошти"
-            fill
-            style={{ objectFit: "contain" }}
-            placeholder="blur"
-            blurDataURL={ImageNP.blurDataURL}
-          />
         </div>
       </div>
     </Container>

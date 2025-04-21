@@ -19,6 +19,13 @@
   justify-items: stretch;
 }
 
+@media (max-width: 480px) {
+  .orderStepsList {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
 .stepItem {
   width: 215px;
   background-color: hsl(240, 13%, 99%);

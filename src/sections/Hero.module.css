@@ -110,6 +110,7 @@
 }
 
 .priceBlock {
+  display: flex;
   border: 1px solid #e6e6e6;
   margin: 20px 0;
 }

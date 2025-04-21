@@ -104,6 +104,9 @@ export default function ReviewsSlider({ reviews }: ReviewsSliderProps) {
               loading="lazy"
               draggable={false}
               className={styles.image}
+              style={{
+                aspectRatio: "5 / 3",
+              }}
             />
             <Image
               src={review.img2}
@@ -113,6 +116,9 @@ export default function ReviewsSlider({ reviews }: ReviewsSliderProps) {
               loading="lazy"
               draggable={false}
               className={styles.image}
+              style={{
+                aspectRatio: "5 / 4",
+              }}
             />
           </div>
         ))}

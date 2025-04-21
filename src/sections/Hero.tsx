@@ -26,10 +26,13 @@ export default function Hero() {
           src={ImageTopOffer}
           alt="Акумуляторна пила ланцюгова – головна пропозиція"
           width={500}
-          height={516}
-          sizes="(max-width: 768px) 100vw, 600px"
+          height={500}
+          sizes="(max-width: 768px) 100vw, 500px"
           priority
           className={styles.imageTop}
+          style={{
+            aspectRatio: "97 / 100",
+          }}
         />
         <div className={styles.discount}>
           <span className={styles.discountValue}>-35%</span>
@@ -44,6 +47,9 @@ export default function Hero() {
             alt="Зручність та якість"
             width={34}
             height={34}
+            style={{
+              aspectRatio: "1 / 1",
+            }}
           />
           <span>Зручність та якість</span>
         </li>
@@ -53,6 +59,9 @@ export default function Hero() {
             alt="Швидка доставка"
             width={34}
             height={34}
+            style={{
+              aspectRatio: "1 / 1",
+            }}
           />
           <span>Швидка доставка</span>
         </li>
@@ -62,6 +71,9 @@ export default function Hero() {
             alt="Оплата при отриманні"
             width={34}
             height={34}
+            style={{
+              aspectRatio: "1 / 1",
+            }}
           />
           <span>Оплата при отриманні</span>
         </li>
@@ -80,6 +92,10 @@ export default function Hero() {
             alt="Гарантія на пилку 12 місяців"
             width={150}
             height={150}
+            sizes="(max-width: 768px) 150px"
+            style={{
+              aspectRatio: "1 / 1",
+            }}
           />
           <span>
             <b>Гарантія 12 місяців</b> від виробника!
@@ -91,6 +107,9 @@ export default function Hero() {
             alt="Компактна та потужна пила"
             width={150}
             height={150}
+            style={{
+              aspectRatio: "1 / 1",
+            }}
           />
           <span>
             Безпечна, портативна та <b>потужна</b>

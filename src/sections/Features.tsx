@@ -25,6 +25,9 @@ export default function Features() {
               width={150}
               height={150}
               loading="lazy"
+              style={{
+                aspectRatio: "1 / 1",
+              }}
             />
             <div className={styles.textBlock}>
               <h3 className={styles.itemHeading}>ПОТУЖНІСТЬ</h3>
@@ -44,6 +47,9 @@ export default function Features() {
               width={150}
               height={150}
               loading="lazy"
+              style={{
+                aspectRatio: "1 / 1",
+              }}
             />
             <div className={styles.textBlock}>
               <h3 className={styles.itemHeading}>
@@ -64,6 +70,9 @@ export default function Features() {
               width={150}
               height={150}
               loading="lazy"
+              style={{
+                aspectRatio: "1 / 1",
+              }}
             />
             <div className={styles.textBlock}>
               <h3 className={styles.itemHeading}>ШВИДКА ЗАРЯДКА</h3>
@@ -83,6 +92,9 @@ export default function Features() {
               width={150}
               height={150}
               loading="lazy"
+              style={{
+                aspectRatio: "1 / 1",
+              }}
             />
             <div className={styles.textBlock}>
               <h3 className={styles.itemHeading}>АВТОМАТИЧНА ПОДАЧА МАСЛА</h3>
@@ -103,6 +115,9 @@ export default function Features() {
           width={480}
           height={480}
           loading="lazy"
+          style={{
+            aspectRatio: "1 / 1",
+          }}
         />
 
         <a href="#order_form" className={styles.button}>

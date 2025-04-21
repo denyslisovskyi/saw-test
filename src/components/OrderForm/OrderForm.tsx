@@ -185,6 +185,9 @@ export default function OrderForm() {
           loading="lazy"
           width={24}
           height={24}
+          style={{
+            aspectRatio: "1 / 1",
+          }}
         />
         <input
           type="text"
@@ -207,6 +210,9 @@ export default function OrderForm() {
           loading="lazy"
           width={24}
           height={24}
+          style={{
+            aspectRatio: "1 / 1",
+          }}
         />
         <input
           type="tel"

@@ -53,6 +53,9 @@ export default function OrderSteps() {
                   height={32}
                   loading="lazy"
                   className={styles.image}
+                  style={{
+                    aspectRatio: "1 / 1",
+                  }}
                 />
               </div>
               <p className={styles.stepText}>{step.text}</p>

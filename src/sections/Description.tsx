@@ -30,18 +30,19 @@ export default function Description() {
         <a href="#order_form" className={styles.button}>
           Замовити зі знижкою
         </a>
-
-        <Image
-          className={styles.imageBottom}
-          src={ImageMain}
-          alt="Акумуляторна пила знизу"
-          sizes="(max-width: 768px) 100vw, 600px"
-          width={500}
-          height={750}
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={ImageMain.blurDataURL}
-        />
+        <div style={{ aspectRatio: "2 / 3", width: "100%" }}>
+          <Image
+            className={styles.imageBottom}
+            src={ImageMain}
+            alt="Акумуляторна пила знизу"
+            sizes="(max-width: 768px) 100vw, 600px"
+            width={500}
+            height={750}
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={ImageMain.blurDataURL}
+          />
+        </div>
       </section>
       <section className={styles.descriptionSection}>
         <h2 className={styles.title}>
@@ -63,6 +64,9 @@ export default function Description() {
           width={480}
           height={360}
           loading="lazy"
+          style={{
+            aspectRatio: "4 / 3",
+          }}
         />
 
         <p className={styles.text}>
@@ -79,6 +83,9 @@ export default function Description() {
           width={480}
           height={480}
           loading="lazy"
+          style={{
+            aspectRatio: "1 / 1",
+          }}
         />
 
         <p className={styles.text}>
@@ -103,6 +110,9 @@ export default function Description() {
           width={480}
           height={274}
           loading="lazy"
+          style={{
+            aspectRatio: "480 / 274",
+          }}
         />
 
         <Image
@@ -112,6 +122,9 @@ export default function Description() {
           width={480}
           height={480}
           loading="lazy"
+          style={{
+            aspectRatio: "1 / 1",
+          }}
         />
 
         <a href="#order_form" className={styles.button}>

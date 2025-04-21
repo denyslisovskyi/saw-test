@@ -24,7 +24,7 @@ export default function Hero() {
       <div className={styles.imageBlock}>
         <Image
           src={ImageTopOffer}
-          alt="Акумуляторна пила ланцюгова – головна пропозиція"
+          alt="Фото акумуляторної пилки на траві"
           width={500}
           height={500}
           sizes="(max-width: 768px) 100vw, 500px"
@@ -44,7 +44,7 @@ export default function Hero() {
         <li className={styles.benefitItem}>
           <Image
             src={ImageBenefitFirst}
-            alt="Зручність та якість"
+            alt="Іконка з галочкою якості"
             width={34}
             height={34}
             style={{
@@ -56,7 +56,7 @@ export default function Hero() {
         <li className={styles.benefitItem}>
           <Image
             src={ImageBenefitSecond}
-            alt="Швидка доставка"
+            alt="Іконка вантажівки доставки"
             width={34}
             height={34}
             style={{
@@ -68,7 +68,7 @@ export default function Hero() {
         <li className={styles.benefitItem}>
           <Image
             src={ImageBenefitThird}
-            alt="Оплата при отриманні"
+            alt="Іконка грошей"
             width={34}
             height={34}
             style={{
@@ -81,7 +81,12 @@ export default function Hero() {
 
       <div className={styles.benefitsBlock}>
         <div className={styles.benefitItem}>
-          <Image src={ImageOneP} alt="Пила в роботі" width={150} height={150} />
+          <Image
+            src={ImageOneP}
+            alt="Фото пилки під час роботи"
+            width={150}
+            height={150}
+          />
           <span>
             <b>Для будь-яких робіт</b> вдома, в саду чи на дачі!
           </span>
@@ -89,7 +94,7 @@ export default function Hero() {
         <div className={styles.benefitItem}>
           <Image
             src={ImageTwoP}
-            alt="Гарантія на пилку 12 місяців"
+            alt="Іконка гарантії"
             width={150}
             height={150}
             sizes="(max-width: 768px) 150px"
@@ -104,7 +109,7 @@ export default function Hero() {
         <div className={styles.benefitItem}>
           <Image
             src={ImageThreeP}
-            alt="Компактна та потужна пила"
+            alt="Фото компактної акумуляторної пилки"
             width={150}
             height={150}
             style={{

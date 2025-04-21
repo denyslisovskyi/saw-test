@@ -21,7 +21,7 @@ export default function Features() {
             <Image
               className={styles.img}
               src={ImageSh1}
-              alt="Потужна акумуляторна пила"
+              alt="Фото потужної акумуляторної пилки"
               width={150}
               height={150}
               loading="lazy"
@@ -43,7 +43,7 @@ export default function Features() {
             <Image
               className={styles.img}
               src={ImageSh2}
-              alt="2 надійні акумулятори для пили"
+              alt="Фото двох акумуляторів для пилки"
               width={150}
               height={150}
               loading="lazy"
@@ -66,7 +66,7 @@ export default function Features() {
             <Image
               className={styles.img}
               src={ImageSh3}
-              alt="Швидке заряджання акумулятора"
+              alt="Фото процесу заряджання акумулятора"
               width={150}
               height={150}
               loading="lazy"
@@ -88,7 +88,7 @@ export default function Features() {
             <Image
               className={styles.img}
               src={ImageMaslo}
-              alt="Автоматична подача масла в пилу"
+              alt="Іконка автоматичної подачі масла в пилу"
               width={150}
               height={150}
               loading="lazy"
@@ -111,7 +111,7 @@ export default function Features() {
         <Image
           className={styles.image}
           src={ImageZbirka}
-          alt="Швидка та легка підготовка акумуляторної пили"
+          alt="Фото підготовки пилки до роботи"
           width={480}
           height={480}
           loading="lazy"

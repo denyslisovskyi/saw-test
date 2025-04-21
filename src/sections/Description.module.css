@@ -68,9 +68,10 @@
 }
 
 .imageWrapper {
-  width: 478;
-  height: 118;
+  width: 478px;
+  height: 118px;
   position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 375px) {

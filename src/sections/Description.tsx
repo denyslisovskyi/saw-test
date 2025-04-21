@@ -18,7 +18,7 @@ export default function Description() {
       <div className={styles.imageWrapper}>
         <Image
           src={ImageNP}
-          alt="Розстрочка від Нової Пошти"
+          alt="Іконка Нової Пошти з розстрочкою"
           fill
           style={{ objectFit: "contain" }}
           placeholder="blur"
@@ -34,7 +34,7 @@ export default function Description() {
           <Image
             className={styles.imageBottom}
             src={ImageMain}
-            alt="Акумуляторна пила знизу"
+            alt="Фото виду на пилку знизу"
             sizes="(max-width: 768px) 100vw, 600px"
             width={500}
             height={750}
@@ -60,7 +60,7 @@ export default function Description() {
         <Image
           className={styles.image}
           src={ImageA1}
-          alt="Обрізка гілок"
+          alt="Фото обрізки гілок пилкою"
           width={480}
           height={360}
           loading="lazy"
@@ -79,7 +79,7 @@ export default function Description() {
         <Image
           className={styles.image}
           src={ImageUse}
-          alt="Заготівля дров"
+          alt="Фото заготівлі дров пилкою"
           width={480}
           height={480}
           loading="lazy"
